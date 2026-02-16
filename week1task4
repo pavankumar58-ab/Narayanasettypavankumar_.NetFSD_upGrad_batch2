@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Computer Science Department Information Page">
+    <meta name="author" content="XYZ College">
+    <title>XYZ College - Computer Science Department</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header title="Department Header">
+        <h1 align="center">Computer Science Department</h1>
+        <h2 align="center">XYZ College of Arts and Science</h2>
+        <hr>
+    </header>
+
+    <!-- Section 1: Faculty Details -->
+    <section title="Faculty Details Section">
+        <h2>Faculty Details</h2>
+
+        <table border="1" title="Faculty Information Table">
+            <tr>
+                <th>Faculty Name</th>
+                <th>Designation</th>
+                <th>Subject Handled</th>
+            </tr>
+
+            <tr>
+                <td>Dr. Anil Kumar</td>
+                <td>Professor</td>
+                <td>Data Structures</td>
+            </tr>
+
+            <tr>
+                <td>Ms. Priya Sharma</td>
+                <td>Assistant Professor</td>
+                <td>Database Management Systems</td>
+            </tr>
+
+            <tr>
+                <td>Mr. Ravi Mehta</td>
+                <td>Lecturer</td>
+                <td>Web Technologies</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Subjects Offered -->
+    <section title="Subjects Offered Section">
+        <h2>Subjects Offered</h2>
+
+        <ul title="List of Subjects">
+            <li>Programming in C</li>
+            <li>Object-Oriented Programming (Java)</li>
+            <li>Data Structures</li>
+            <li>Database Management Systems</li>
+            <li>Web Development</li>
+            <li>Operating Systems</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Weekly Timetable -->
+    <section title="Weekly Timetable Section">
+        <h2>Weekly Timetable</h2>
+
+        <table border="1" title="Department Weekly Timetable">
+            <tr>
+                <th>Day</th>
+                <th>Subject</th>
+                <th>Time Slot</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>Data Structures</td>
+                <td>9:00 AM - 10:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>Database Management Systems</td>
+                <td>10:00 AM - 11:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>Web Development</td>
+                <td>11:00 AM - 12:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>Operating Systems</td>
+                <td>1:00 PM - 2:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>Programming in C</td>
+                <td>2:00 PM - 3:00 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer title="College Contact Information">
+        <p>
+            <strong>Address:</strong> XYZ College of Arts and Science, 
+            MG Road, Chennai, Tamil Nadu, India.
+        </p>
+
+        <p>
+            <strong>Contact:</strong> 
+            Phone: +91-9876543210 <br>
+            Email: info@xyzcollege.edu.in
+        </p>
+
+        <p align="center">
+            © 2026 XYZ College. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
