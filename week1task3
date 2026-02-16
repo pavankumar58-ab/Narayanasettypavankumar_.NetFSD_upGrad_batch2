@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Employee Onboarding Page for New Employees">
+    <meta name="author" content="HR Department">
+    <title>ABC Technologies - Employee Onboarding</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header title="Company Introduction">
+        <h1 align="center">ABC Technologies</h1>
+        <p align="center">
+            Welcome to ABC Technologies! We are excited to have you onboard.
+            This page contains important information for all new employees.
+        </p>
+        <hr>
+    </header>
+
+    <!-- Employee Details Section -->
+    <section title="Employee Details Section">
+        <h2>Employee Information</h2>
+
+        <table border="1" title="Employee Information Table">
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Joining Date</th>
+            </tr>
+
+            <tr>
+                <td>EMP001</td>
+                <td>Rahul Sharma</td>
+                <td>Human Resources</td>
+                <td>01-Jan-2026</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Company Policies Article -->
+    <article title="Company Policies and Guidelines">
+        <h2>Company Policies</h2>
+
+        <ol>
+            <li>Working hours: 9:00 AM to 6:00 PM (Monday to Friday)</li>
+            <li>Leave policy: 12 paid leaves per year</li>
+            <li>Code of conduct: Maintain professionalism and integrity at workplace</li>
+        </ol>
+
+        <h3>Facilities Provided</h3>
+        <ul>
+            <li>Laptop</li>
+            <li>Internet access</li>
+            <li>Training materials</li>
+        </ul>
+    </article>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer title="Contact Information">
+        <p>
+            For any queries, contact HR Department at:
+            <br>
+            Email: hr@abctech.com
+            <br>
+            Phone: +91-1234567869
+        </p>
+        <p align="center">
+            © 2026 ABC Technologies. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
