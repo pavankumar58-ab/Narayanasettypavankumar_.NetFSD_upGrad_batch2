@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Blog Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* ===== Global Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        /* ===== Main Layout ===== */
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+        }
+
+        .blog-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        /* ===== Blog Card ===== */
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            flex: 1 1 100%; /* Mobile default */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+
+        .card p {
+            flex-grow: 1;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .card button {
+            padding: 0.6rem 1rem;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        /* ===== Tablet (2 columns) ===== */
+        @media (min-width: 600px) {
+            .card {
+                flex: 1 1 calc(50% - 1.5rem);
+            }
+        }
+
+        /* ===== Desktop (3 columns) ===== */
+        @media (min-width: 992px) {
+            .card {
+                flex: 1 1 calc(33.33% - 1.5rem);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Blog Homepage</h1>
+    </header>
+
+    <main class="container">
+        <div class="blog-grid">
+
+            <div class="card">
+                <h2>Understanding CSS Flexbox</h2>
+                <p>Learn how Flexbox works and how you can use it to create modern responsive layouts easily.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="card">
+                <h2>Mastering CSS Grid</h2>
+                <p>CSS Grid helps you build complex layouts with clean and organized code structure.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="card">
+                <h2>Responsive Design Basics</h2>
+                <p>Understand how media queries work and how to make your websites mobile-friendly.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="card">
+                <h2>Improving Web Typography</h2>
+                <p>Good typography improves readability and enhances the overall user experience.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="card">
+                <h2>Box Model Explained</h2>
+                <p>Learn about margin, padding, border, and content area to control spacing effectively.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="card">
+                <h2>Modern UI Trends</h2>
+                <p>Explore current design trends used in modern web applications and websites.</p>
+                <button>Read More</button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
