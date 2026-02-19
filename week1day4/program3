@@ -1,0 +1,18 @@
+var signal="red"
+switch(signal){
+    case "yellow":
+        console.log("YELLOW")
+        console.log("READY TO GO")
+        break
+    case "green":
+        console.log("GREEN")
+        console.log(" GO")
+        break
+    case "red":
+       console.log("RED")
+        console.log("STOP")
+        break
+
+    default:
+        console.log("INVALID")
+}
