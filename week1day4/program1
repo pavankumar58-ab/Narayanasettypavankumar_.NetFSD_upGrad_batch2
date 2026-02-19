@@ -1,0 +1,21 @@
+var marks=90
+if(marks>=75){
+    console.log("marks are :"+marks+"your grade is A");
+
+}
+else if(marks>=60){
+    console.log("marks are :"+ marks+"your grade is B");
+}
+else if(marks>=55){
+    console.log("marks are:"+marks+"your grade is C");
+}
+else if(marks>=50){
+    console.log("marks are:"+marks+"your grade is D");
+}
+else if(marks>=45){
+    console.log("marks are :"+marks+"your grade is E");
+}
+else{
+    console.log("your marks is :"+marks+"your grade is F");
+
+}
