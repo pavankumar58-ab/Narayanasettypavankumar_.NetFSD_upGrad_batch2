@@ -1,0 +1,15 @@
+let value=10
+let result=value>0 ? "positive":"negative"
+console.log(result)
+if(value%2==0){
+    console.log(value+"is even");
+}
+else{
+console.log(value+"is odd")
+}
+for(let loop=1;loop<=10;loop++){
+    console.log(loop)
+}
+
+
+
