@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text"placeholder="enter your name">
+    <button type="button" onclick="letsgreet()">Generate greeting</button>
+    <p id="demo"></p>
+    <script>
+        function letsgreet(){
+            var name=document.getElementById("text").value
+            var greeting="hello"+name+"welcome to our website"
+            document.getElementById("demo").innerHTML=greeting;
+
+        }
+    </script>
+</body>
+</html>
