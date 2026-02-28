@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College Event Dashboard</title>
+
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">College Events</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Dashboard Content -->
+<div class="container my-5">
+
+  <div class="row g-4">
+
+    <!-- Sidebar -->
+    <div class="col-12 col-md-4 col-lg-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Quick Actions</h5>
+          <button class="btn btn-success w-100 mt-3" data-bs-toggle="modal" data-bs-target="#addEventModal">
+            Add New Event
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event List -->
+    <div class="col-12 col-md-8 col-lg-9">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="mb-3">Upcoming Events</h4>
+
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover align-middle text-center">
+              <thead class="table-dark">
+                <tr>
+                  <th>Event Name</th>
+                  <th>Date</th>
+                  <th>Department</th>
+                  <th>Coordinator</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tech Fest</td>
+                  <td>15 Mar 2026</td>
+                  <td>CSE</td>
+                  <td>Rahul</td>
+                </tr>
+                <tr>
+                  <td>Cultural Night</td>
+                  <td>20 Mar 2026</td>
+                  <td>Arts</td>
+                  <td>Anjali</td>
+                </tr>
+                <tr>
+                  <td>Sports Meet</td>
+                  <td>25 Mar 2026</td>
+                  <td>Physical Edu</td>
+                  <td>Kiran</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Add Event Modal -->
+<div class="modal fade" id="addEventModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Event</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form class="needs-validation" novalidate>
+
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label class="form-label">Event Name</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Event name is required.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-control" required>
+              <div class="invalid-feedback">Date is required.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Department</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Department is required.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Coordinator</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Coordinator name is required.</div>
+            </div>
+
+          </div>
+
+          <div class="text-end mt-4">
+            <button type="submit" class="btn btn-primary">Save Event</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Validation Script -->
+<script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})();
+</script>
+
+</body>
+</html>
